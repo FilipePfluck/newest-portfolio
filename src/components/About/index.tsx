@@ -6,7 +6,7 @@ import * as S from './styles'
 export const About = () => {
   return (
     <Flex direction='column' gap='48px' align='center' >
-      <Flex gap='64px' align='center'>
+      <Flex gap='64px' align='center' direction={{base: 'column', md: 'row'}}>
         <S.ProfilePic 
           src='https://avatars.githubusercontent.com/u/62773200?v=4'
         />

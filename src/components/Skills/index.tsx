@@ -4,7 +4,7 @@ import { PiMonitorFill, PiDatabaseFill, PiFlaskFill } from 'react-icons/pi'
 
 export const Skills = () => {
   return (
-    <Flex gap='48px' w='1200px'> 
+    <Flex gap='48px' w={{base: '600px', lg: '1200px'}} direction={{base: 'column', lg: 'row'}} align='center'> 
       <S.SkillCard direction='column'>
         <Flex gap='16px' align='center'>
           <PiMonitorFill size='32px' color='var(--colors-green-2)'/>
@@ -40,14 +40,14 @@ export const Skills = () => {
         
       </S.SkillCard>
 
-      <Flex direction='column' gap='48px' w='55%'>
+      <Flex direction='column' gap='48px' w={{base: '80%', lg: '55%'}} align='center'>
         <S.SkillCard direction='row'>
           <Flex gap='16px' align='center'>
             <PiDatabaseFill size='32px' color='var(--colors-green-2)'/>
             <S.SkillTitle>Backend</S.SkillTitle>
           </Flex>
 
-          <Flex gap='24px'>
+          <Flex gap='24px' flexDirection={{base: 'column', md: 'row'}}>
             <S.SkillSubtitleContainer>
               <S.SkillSubtitle>APIs</S.SkillSubtitle>
               <S.SkillText>
@@ -73,7 +73,7 @@ export const Skills = () => {
             <S.SkillTitle>Testing</S.SkillTitle>
           </Flex>
 
-          <Flex gap='24px'>
+          <Flex gap='24px' flexDirection={{base: 'column', md: 'row'}}>
             <S.SkillSubtitleContainer>
               <S.SkillSubtitle>Unitary</S.SkillSubtitle>
               <S.SkillText>

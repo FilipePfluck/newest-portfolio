@@ -4,7 +4,7 @@ export const SkillCard = styled('div', {
   base: {
     display: 'flex',
     rounded: '16px',
-    p: '48px',
+    p: {base: '16px', md: '48px'},
     gap: '24px',
 
     bg: 'radial-gradient(circle, rgba(29, 29, 32, 1) 0%, rgba(29, 29, 32, 0.3) 100%);',
@@ -14,10 +14,18 @@ export const SkillCard = styled('div', {
     direction: {
       column: {
         flexDir: 'column',
-        w: 'calc(45% - 48px)'
+        w: {
+          base: 'calc(60% - 48px)',
+          md: 'calc(100%)',
+          lg: 'calc(45% - 48px)'
+        } 
       },
       row: {
         flexDir: 'column',
+        w: {
+          base: 'calc(80% - 48px)',
+          md: 'calc(100%)',
+        } 
       }
     }
   }

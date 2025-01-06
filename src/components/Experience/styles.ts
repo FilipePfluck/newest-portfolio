@@ -36,7 +36,7 @@ export const JobDescription = styled('p', {
     fontSize: '16px',
     lineHeight: '120%',
     color: 'slate.5',
-    maxW: '685px'
+    maxW: { base: '300px', md: '685px'}
   }
 })
 
@@ -44,7 +44,8 @@ export const EventsContainer = styled('div', {
   base: {
     display: 'flex',
     gap: '24px',
-    maxW: '685px',
+    maxW: { base: '300px', md: '685px'},
+    flexDir: { base: 'column', md: 'row'}
   }
 })
 

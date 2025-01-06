@@ -36,7 +36,7 @@ export const CourseDescription = styled('p', {
     fontSize: '16px',
     lineHeight: '120%',
     color: 'slate.5',
-    maxW: '685px'
+    maxW: { base: '300px', md: '685px'}
   }
 })
 
@@ -45,7 +45,7 @@ export const BootcampsContainer = styled('div', {
     display: 'flex',
     flexDir: 'column',
     gap: '24px',
-    maxW: '685px',
+    maxW: { base: '300px', md: '685px'},
   }
 })
 
